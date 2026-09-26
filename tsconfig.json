@@ -1,23 +1,33 @@
 {
   "compilerOptions": {
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+
     // Environment setup & latest features
     "lib": ["ESNext"],
     "target": "ESNext",
     "module": "ESNext",
-    "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
     "types": ["node"],
 
-    // Bundler mode
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions": true,
-    "verbatimModuleSyntax": true,
     "declaration": true,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
-    "noEmit": true,
 
     // Path aliases
     "paths": {
@@ -26,15 +36,9 @@
 
     // Best practices
     "strict": true,
-    "skipLibCheck": true,
     "isolatedModules": true,
-    "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-
-    // Some stricter flags
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noPropertyAccessFromIndexSignature": true
   }
 }
