@@ -10,8 +10,9 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "vp pack",
-    "dev": "vp run website#dev",
+    "build": "tsc && vp build",
+    "dev": "vp dev",
+    "preview": "vp preview",
     "ready": "vp check && vp run -r test && vp run -r build",
     "prepare": "vp config",
     "start": "node --import @oxc-node/core/register src/main.ts",
