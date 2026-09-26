@@ -1,14 +1,14 @@
 {
   "name": "@lib/module",
   "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
     ".": "./dist/main.mjs",
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "vp pack",
     "dev": "vp run website#dev",
@@ -17,9 +17,6 @@
     "start": "node --import @oxc-node/core/register src/main.ts",
     "test": "node --import @oxc-node/core/register --test"
   },
-  "overrides": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0-rc.1"
-  },
   "devDependencies": {
     "@oxc-node/core": "^0.1.3",
     "@types/node": "^26.6.2",
@@ -27,5 +24,8 @@
   },
   "peerDependencies": {
     "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0-rc.1"
   }
 }
