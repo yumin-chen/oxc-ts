@@ -8,6 +8,8 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "types": ["node"],
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
 
     // Bundler mode
     "moduleResolution": "bundler",
@@ -26,7 +28,6 @@
 
     // Best practices
     "strict": true,
-    "skipLibCheck": true,
     "isolatedModules": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
@@ -35,6 +36,7 @@
     // Some stricter flags
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
     "noPropertyAccessFromIndexSignature": true
   }
 }
