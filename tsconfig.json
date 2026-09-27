@@ -17,8 +17,6 @@
     "rewriteRelativeImportExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "declaration": true,
-    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "noEmit": true,
 
