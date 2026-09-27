@@ -4,7 +4,6 @@
     "lib": ["ESNext"],
     "target": "ESNext",
     "module": "ESNext",
-    "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
     "types": ["node"],
@@ -16,10 +15,11 @@
     "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions": true,
     "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
     "declaration": true,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
-    "noEmit": true,
 
     // Path aliases
     "paths": {
